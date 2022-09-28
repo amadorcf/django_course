@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block styes %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% include 'layouts/partials/menu.html' %}
+    </header>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    {% include 'layouts/partials/footer.html' %}
+    {% block scripts %} {% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BIENVENIDO</title>
+</head>
+<body>
+    <h1>¡HOLA {{ name.title }}!</h1>
+    <h3> Categorias: </h3>
+    <ul>
+        {# Esto es un comentario que no sera inspeccionado en un navegador #}
+
+        {% comment %}
+            Recorremos las categorias y las visualizamos
+        {% endcomment%}
+
+        {% for i in categories %}
+            <li>{{ i }}
+        {% endfor %}
+
+        {# Esto es un filtro #}
+        <h5> Total de categorias: {{categories|length}}</h5>
+    </ul>
+</body>
+</html>
