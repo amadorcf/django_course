@@ -45,6 +45,7 @@
       </filter>
     </filter-actions>
     <filter-actions connection-id="be2f0a33-2cca-4832-b55f-c7eb3c4d50e8" dataset="main.django_session" active-filter-id="" />
+    <filter-actions connection-id="be2f0a33-2cca-4832-b55f-c7eb3c4d50e8" dataset="main.post_entry" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -90,7 +91,7 @@
           <port value="" />
           <database value="" />
           <files>
-            <file path="D:\CURSOS\.OpenBootcamp\django_course\holamundo\db.sqlite3" schema="main" />
+            <file path="D:\CURSOS\.OpenBootcamp\django_course\my_blog\db.sqlite3" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
