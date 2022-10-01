@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Consultas de bases de datos</h1>
+
+    <h3>Obtener un unico elemento filtrado por id</h3>
+    <ul><p> {{author.email }}</p></ul>
+
+    <h3>Datos filtrados por email: eddie59@example.net</h3>
+   <ul>
+       {% for elm in filtered %}
+       <li>Usuario: {{ elm.name }} <br>
+           Email: {{ elm.email }}</li>
+       {% endfor %}
+   </ul>
+
+    <h3>ID <= 15</h3>
+   <ul>
+       {% for elm in filtered2 %}
+       <li>Email: {{ elm.email }}</li>
+       {% endfor %}
+   </ul>
+
+        <h3>Nombre que contenga yes</h3>
+   <ul>
+       {% for elm in filtered3 %}
+       <li>Email: {{ elm.name }}</li>
+       {% endfor %}
+   </ul>
+
+    <h3>Todos los autores</h3>
+    <ul>
+        {% for author in authors %}
+        <li>{{ author.name }} ({{ author.email }})</li>
+        {% endfor %}
+    </ul>
+    <h3>Total de autores: {{ authors|length }}</h3>
+
+        <h3>Obtener ordenados por email</h3>
+    <ul>
+        {% for order in orders %}
+        <li>{{ order.email }})</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Obtener los 10 primeros emails</h3>
+    <ul>
+        {% for limit in limits %}
+        <li>{{ limit.email }})</li>
+        {% endfor %}
+    </ul>
+    <h3>Total de emails: {{ limits|length }}</h3>
+
+
+
+</body>
+</html>
