@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DJANGO-FORM</title>
+</head>
+<body>
+    <h1>DJANGO-FORM</h1>
+    <hr>
+    <table>
+        <form action="{% url 'goal' %}" method="GET">
+        {{ comment_form.as_table}}
+        <input type="submit" value="Enviar">
+        </form>
+    </table>
+</body>
+</html>
