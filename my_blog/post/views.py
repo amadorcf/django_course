@@ -36,6 +36,7 @@ def queries(request):
                                                  'filtered3': filtered3}
                   )
 
+
 def update(request):
     author = Author.objects.get(id=1)
     author.name = "Finidi"
