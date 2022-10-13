@@ -1,0 +1,14 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %} Inicio {% endblock %}
+
+{% block 'content' %}
+<br>
+<h1>Bienvenido a tu agenda personal.</h1>
+<br>
+
+<div class="cards">
+        <a href="{% url 'contact' %} " class="card">CONTACTOS</a>
+        <a href="{% url 'todo' %} " class="card">TAREAS</a>
+</div>
+{% endblock %}

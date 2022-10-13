@@ -1,0 +1,24 @@
+
+{% extends 'layout/base.html' %}
+
+{% block 'title' %} Crear Contacto {% endblock %}
+
+{% block 'styles' %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block 'content' %}
+
+    <span class="aux-btns"><a href="{% url 'todo' %}">⤺ Volver atras </a></span>
+    <form action="{% url 'todo_create'%}" method="POST">
+        {% csrf_token %}
+        <table>
+        {{ form.as_table }}
+        </table>
+        <div class="btn-wrapper">
+            <input class="btn-send" type="submit" value="Enviar">
+        </div>
+    </form>
+
+{% endblock %}
